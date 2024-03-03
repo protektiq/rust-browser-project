@@ -3,7 +3,7 @@ use druid::{AppLauncher, Data, Lens, LocalizedString, Widget, WidgetExt, WindowD
 
 fn main() {
     // This describes our window: its title and initial size.
-    let main_window = WindowDesc::new(|| build_ui())
+    let main_window = WindowDesc::new(build_ui)
         .title(LocalizedString::new("mini-browser-window-title").with_placeholder("Mini Browser"))
         .window_size((400.0, 100.0));
 
